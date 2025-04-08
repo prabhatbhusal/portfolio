@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <header className="px-6 py-12 flex justify-center items-center">
-      <div className="fixed p-1.5 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-500 rounded-full ">
+      <div className="fixed p-1.5 bg-gradient-to-r from-indigo-900 to-purple-300 rounded-full ">
         <nav className="flex justify-center items-center p-4 bg-black rounded-full text-white transition-all duration-300">
           <ul className="flex space-x-6 font-semibold">
             {links.map((link) => (
