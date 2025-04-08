@@ -19,7 +19,7 @@ const Page = () => {
 
         <h1 className="font-bold text-white text-8xl">Hi. I`m Prabhat.</h1>
         <h1 className="font-bold text-white text-6xl">
-          Designer. || Developer.
+          Designer. | Developer.
         </h1>
         <p className="text-white font-semibold">
           I`m passionate about crafting experiences that are engaging,
@@ -30,6 +30,9 @@ const Page = () => {
       <div id="skills" className="h-150 border-blue-800 border-2 rounded-2xl mt-12">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-white text-4xl font-semibold py-10">Skills</h1>
+          <div>
+
+          </div>
         </div>
       </div>
     </div>
