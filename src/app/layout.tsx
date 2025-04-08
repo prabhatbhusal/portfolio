@@ -17,7 +17,7 @@ import { ReactNode } from "react";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-poppins`}>
+      <body className={`${poppins.variable} font-poppins bg-black`}>
         <Navbar />
         {children}
       </body>

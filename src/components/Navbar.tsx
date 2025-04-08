@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiSunLine,RiMoonLine } from '@remixicon/react'
+
 const Navbar = () => {
   const links = [
     { name: 'Home', href: '/' },
@@ -7,17 +7,16 @@ const Navbar = () => {
     { name: 'Contact', href: '/contact' },
     {name: 'Blog', href: '/blog'},
     {name:'Projects', href: '/projects'},
-    {name:<RiSunLine/>, href: '/sun'},
-    {name:<RiMoonLine/>, href: '/moon'},
+
   ]
   return (
-    <div className="">
-      <nav className="flex fixed w-full justify-between items-center p-4 border-1 border-gray-800 rounded text-black">
-        <div className="text-2xl font-bold ">.Porfolio </div>
-        <ul className="flex space-x-4 font-semibold">
+    <div className="px-25 py-12 flex justify-center items-center">
+      <nav className="flex fixed  justify-center items-center p-4 border-3 p-1 border-white transition ease-in-out duration 500 rounded-4xl text-white">
+
+        <ul className="flex space-x-4 font-black">
           {links.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-gray-400">{link.name}</a>
+              <a href={link.href} className="hover:text-gray-400 transition ease-in-out duratio-500 ">{link.name}</a>
             </li>
           ))}
         </ul>
