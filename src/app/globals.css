@@ -4,4 +4,14 @@
   --font-poppins: Poppins, sans-serif;
 }
 
+:root {
+  --gradient-indigo-purple: linear-gradient(to right, #6366f1, #9333ea);
+  --texts-color:linear-gradient(to right, #6366f1, #9333ea)
+}
 
+.gradient-indigo-purple {
+  background: var(--gradient-indigo-purple);
+}
+.texts-color{
+  color: var(--texts-color);
+}

@@ -10,17 +10,15 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="px-25 py-12 flex justify-center items-center">
-      {/* Outer div with gradient background acting as border */}
-      <div className="fixed p-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-4xl">
-        {/* Inner nav with solid background */}
-        <nav className="flex justify-center items-center p-4 bg-black rounded-4xl text-white transition ease-in-out duration-500">
-          <ul className="flex space-x-4 font-black">
+    <header className="px-6 py-12 flex justify-center items-center">
+      <div className="fixed p-1.5 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-500 rounded-full ">
+        <nav className="flex justify-center items-center p-4 bg-black rounded-full text-white transition-all duration-300">
+          <ul className="flex space-x-6 font-semibold">
             {links.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="hover:text-gray-400 transition ease-in-out duration-500"
+                  className="relative px-2 py-1 hover:text-indigo-400 transition-all duration-300 ease-in-out inline-block transform hover:scale-110 origin-center"
                 >
                   {link.name}
                 </a>
@@ -29,7 +27,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
